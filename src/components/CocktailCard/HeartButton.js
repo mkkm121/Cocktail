@@ -19,13 +19,13 @@ function HeartButton(props) {
             var checkBox = document.getElementById("checkbox");
             const like = {userId: props.userID, cocktailId: props.cocktailID};
             if (checkBox.checked == true) {
-                axios.post('http://localhost:8080/like', like)
+                axios.post('https://cocktails-370319.uc.r.appspot.com/like', like)
                     .then(response => console.log(response))
                     .catch(function (error) {
                         console.log(error);
                     });
             } else {
-                axios.post('http://localhost:8080/unlike', like)
+                axios.post('https://cocktails-370319.uc.r.appspot.com/unlike', like)
                     .then(response => console.log(response))
                     .catch(function (error) {
                         console.log(error);

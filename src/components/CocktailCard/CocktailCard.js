@@ -29,13 +29,13 @@ const CocktailCard = (props) => {
         getCurrentUser();
         const comment = {content: commentMessage, userId: currentUser.username, cocktailId: props.id};
 
-        await axios.post('http://localhost:8080/addcomment', comment)
+        await axios.post('https://cocktails-370319.uc.r.appspot.com/addcomment', comment)
             .then(response => console.log(response))
             .catch(function (error) {
                     console.log(error);
             });
 
-        await axios.get('http://localhost:8080/cocktailcomments/'+ props.id )
+        await axios.get('https://cocktails-370319.uc.r.appspot.com/cocktailcomments/'+ props.id )
             .then(res => {
                 setComments(res.data.cocktailcomments)
             })
@@ -49,7 +49,7 @@ const CocktailCard = (props) => {
 
     const fetchData = () => {
         getCurrentUser();
-        axios.get('http://localhost:8080/cocktailcomments/'+ props.id )
+        axios.get('https://cocktails-370319.uc.r.appspot.com/cocktailcomments/'+ props.id )
             .then(res => {
                 setComments(res.data.cocktailcomments)
             })
@@ -59,7 +59,7 @@ const CocktailCard = (props) => {
                 }
             });
         if(AuthService.getCurrentUser()) {
-            axios.post('http://localhost:8080/checklike',
+            axios.post('https://cocktails-370319.uc.r.appspot.com/checklike',
                 {
                     "cocktailId": props.id,
                     "userId": JSON.parse(localStorage.getItem('user')).id

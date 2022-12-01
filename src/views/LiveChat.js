@@ -11,7 +11,7 @@ import Messages from '../components/Messages';
 import chatAPI from '../services/chatAPI';
 import { randomColor } from '../utils/common';
 
-const SOCKET_URL = 'http://localhost:8080/ws-chat/';
+const SOCKET_URL = 'https://cocktails-370319.uc.r.appspot.com/ws-chat/';
 
 function LiveChat() {
     const [messages, setMessages] = useState([])

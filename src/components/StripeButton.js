@@ -9,7 +9,7 @@ const StripeButton = ({ price, imageURL, desc }) => {
     const onToken = (token) => {
         console.log(token);
         axios
-            .post("http://localhost:8080/payment", {
+            .post("https://cocktails-370319.uc.r.appspot.com/payment", {
                 amount: stripePrice,
                 token,
             })

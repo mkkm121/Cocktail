@@ -4,7 +4,7 @@ const chatAPI = {
     getMessages: (groupId) => {
         console.log('Calling get messages from API');
         console.log(groupId)
-        return axios.get(`http://localhost:8080/api/messages/${groupId}`);
+        return axios.get(`https://cocktails-370319.uc.r.appspot.com/api/messages/${groupId}`);
     },
 
     sendMessage: (username, text) => {
@@ -13,7 +13,7 @@ const chatAPI = {
             content: text
         }
         console.log(msg)
-        return axios.post(`http://localhost:8080/api/send`, msg);
+        return axios.post(`https://cocktails-370319.uc.r.appspot.com/api/send`, msg);
     }
 }
 

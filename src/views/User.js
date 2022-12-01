@@ -47,7 +47,7 @@ function User() {
             "postalcode": state.postalcode
         };
 
-        axios.put("http://localhost:8080/updateUser", updateUser, {headers: {
+        axios.put("https://cocktails-370319.uc.r.appspot.com/updateUser", updateUser, {headers: {
                 Authorization: 'Bearer ' + authHeaderOnlyToken(),
                 'Content-Type': 'application/json'
             } } )
@@ -73,14 +73,14 @@ function User() {
             type: type
         });
         if(type == 'drinksList')
-        axios.get("http://localhost:8080/userlikescocktailslist/" + userID)
+        axios.get("https://cocktails-370319.uc.r.appspot.com/userlikescocktailslist/" + userID)
             .then(response => {
                 if (response.data) {
                     setUserLikedCoctailList(response.data.drinks)
                 }
             });
         else if(type == 'commentsList'){
-            axios.get("http://localhost:8080/usercomments/"+username)
+            axios.get("https://cocktails-370319.uc.r.appspot.com/usercomments/"+username)
                 .then(response => {
                     if (response.data) {
                         console.log(response.data)
@@ -95,7 +95,7 @@ function User() {
         const fetchUsers = async () => {
             try {
                 setData({users: data.users, isFetching: true});
-                const response = await axios.get("http://localhost:8080/currentUser", {
+                const response = await axios.get("https://cocktails-370319.uc.r.appspot.com/currentUser", {
                     headers:
                         authHeader()
                 });
@@ -115,9 +115,9 @@ function User() {
                 let id = response.data.user[0].id;
                 setUserID(id)
                 setUsername(response.data.user[0].username)
-                let likesresponse = await axios.get("http://localhost:8080/userlikes/" + id);
+                let likesresponse = await axios.get("https://cocktails-370319.uc.r.appspot.com/userlikes/" + id);
                 setLikedDrinks(likesresponse.data)
-                let commentresponse = await axios.get("http://localhost:8080/numberusercomments/" + response.data.user[0].username);
+                let commentresponse = await axios.get("https://cocktails-370319.uc.r.appspot.com/numberusercomments/" + response.data.user[0].username);
                 setCommentedDrinks(commentresponse.data)
             } catch (exception) {
                 console.log(exception)

@@ -55,17 +55,17 @@ function SearchByIngredient(){
     function fetchData  ()  {
         if (state) {
             if (state.ingredient1 && state.ingredient2 && state.ingredient3){
-                axios.get('http://localhost:8080/byingredient?ingredients=' + state.ingredient1 +',' + state.ingredient2 +',' + state.ingredient3).then(res => {
+                axios.get('https://cocktails-370319.uc.r.appspot.com/byingredient?ingredients=' + state.ingredient1 +',' + state.ingredient2 +',' + state.ingredient3).then(res => {
                     setData(res.data.drinks);
                 });
             }
             else if(state.ingredient1 && state.ingredient2){
-                axios.get('http://localhost:8080/byingredient?ingredients=' + state.ingredient1 +',' + state.ingredient2).then(res => {
+                axios.get('https://cocktails-370319.uc.r.appspot.com/byingredient?ingredients=' + state.ingredient1 +',' + state.ingredient2).then(res => {
                     setData(res.data.drinks);
                 });
             }
             else if(state.ingredient1){
-                axios.get('http://localhost:8080/byingredient?ingredients=' + state.ingredient1).then(res => {
+                axios.get('https://cocktails-370319.uc.r.appspot.com/byingredient?ingredients=' + state.ingredient1).then(res => {
                     setData(res.data.drinks);
                 });
             }

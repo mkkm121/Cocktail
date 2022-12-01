@@ -16,7 +16,7 @@ function GetData(path) {
             path = path.replaceAt(path.indexOf("/", 11), "&#47;");
         }
 
-        axios.get('http://localhost:8080' + path).then(res => {
+        axios.get('https://cocktails-370319.uc.r.appspot.com' + path).then(res => {
             setData(res.data.drinks);
         });
     }

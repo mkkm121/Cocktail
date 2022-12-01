@@ -6,7 +6,7 @@ const GetData = (props) => {
     const [data, setData] = useState([]);
 
     const fetchData = () => {
-        axios.get('http://localhost:8080/allcocktails').then(res => {
+        axios.get('https://cocktails-370319.uc.r.appspot.com/allcocktails').then(res => {
             setData(res.data.drinks);
         });
     }

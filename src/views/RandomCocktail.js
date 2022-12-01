@@ -7,7 +7,7 @@ const GetData = () => {
     const [data, setData] = useState([]);
 
     const fetchData = () => {
-        axios.get('http://localhost:8080/random').then(res => {
+        axios.get('https://cocktails-370319.uc.r.appspot.com/random').then(res => {
             setData(res.data.drinks);
         });
     }
