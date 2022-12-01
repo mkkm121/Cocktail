@@ -1,0 +1,17 @@
+.add-input{
+    background: #00bbff;
+}
+.add-input:hover{
+    background: #2a5788;
+    transition: 0.5s;
+}
+
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
