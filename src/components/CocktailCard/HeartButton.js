@@ -15,7 +15,7 @@ function HeartButton(props) {
     function myFunction() {
         // Get the checkbox
             if(props.userID==null)
-                window.location.pathname = '/login'
+                window.location.pathname = '/Cocktail/login'
             var checkBox = document.getElementById("checkbox");
             const like = {userId: props.userID, cocktailId: props.cocktailID};
             if (checkBox.checked == true) {
