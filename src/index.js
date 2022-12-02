@@ -13,7 +13,7 @@ ReactDOM.render(
         <Switch>
             <Route path="" render={(props)  => <MainLayout {...props} search="" />}/>
             <Redirect to={{
-                pathname: "/allcocktails"
+                pathname: "/Cocktail/allcocktails"
             }}/>
         </Switch>
     </BrowserRouter>,

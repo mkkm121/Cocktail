@@ -13,10 +13,9 @@ function GetData(path) {
 
     const fetchData = () => {
         if (path.indexOf("/", 11) > 0) {
-            path = path.replaceAt(path.indexOf("/", 11), "&#47;");
         }
 
-        axios.get('https://cocktails-370319.uc.r.appspot.com' + path).then(res => {
+        axios.get('https://cocktails-370319.uc.r.appspot.com' + path.slice(9)).then(res => {
             setData(res.data.drinks);
         });
     }

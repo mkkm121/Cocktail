@@ -167,42 +167,42 @@ const CocktailCard = (props) => {
                                             overflow: "auto",
                                             marginTop:"10px"}}>
                                     {props.ing1 ? (
-                                        <a href={"/ingredient/" + props.ing1} target={"_blank"}>
+                                        <a href={"/Cocktail/ingredient/" + props.ing1} target={"_blank"}>
                                             <h5>{"1. " + props.ing1 + "  "}{props.measure1 ? props.measure1 : null}</h5>
                                         </a>
                                     ) : null}
                                     {props.ing2 ? (
-                                        <a href={"/ingredient/" + props.ing2} target={"_blank"}>
+                                        <a href={"/Cocktail/ingredient/" + props.ing2} target={"_blank"}>
                                             <h5>{"2. " + props.ing2 + "  "}{props.measure2 ? props.measure2 : null}</h5>
                                         </a>
                                     ) : null}
                                     {props.ing3 ? (
-                                        <a href={"/ingredient/" + props.ing3} target={"_blank"}>
+                                        <a href={"/Cocktail/ingredient/" + props.ing3} target={"_blank"}>
                                             <h5>{"3. " + props.ing3 + "  "}{props.measure3 ? props.measure3 : null}</h5>
                                         </a>
                                     ) : null}
                                     {props.ing4 ? (
-                                        <a href={"/ingredient/" + props.ing4} target={"_blank"}>
+                                        <a href={"/Cocktail/ingredient/" + props.ing4} target={"_blank"}>
                                             <h5>{"4. " + props.ing4 + "  "}{props.measure4 ? props.measure4 : null}</h5>
                                         </a>
                                     ) : null}
                                     {props.ing5 ? (
-                                        <a href={"/ingredient/" + props.ing5} target={"_blank"}>
+                                        <a href={"/Cocktail/ingredient/" + props.ing5} target={"_blank"}>
                                             <h5>{"5. " + props.ing5 + "  "}{props.measure5 ? props.measure5 : null}</h5>
                                         </a>
                                     ) : null}
                                     {props.ing6 ? (
-                                        <a href={"/ingredient/" + props.ing6} target={"_blank"}>
+                                        <a href={"/Cocktail/ingredient/" + props.ing6} target={"_blank"}>
                                             <h5>{"6. " + props.ing6 + "  "}{props.measure6 ? props.measure6 : null}</h5>
                                         </a>
                                     ) : null}
                                     {props.ing7 ? (
-                                        <a href={"/ingredient/" + props.ing7} target={"_blank"}>
+                                        <a href={"/Cocktail/ingredient/" + props.ing7} target={"_blank"}>
                                             <h5>{"7. " + props.ing7 + "  "}{props.measure7 ? props.measure7 : null}</h5>
                                         </a>
                                     ) : null}
                                     {props.ing8 ? (
-                                        <a href={"/ingredient/" + props.ing8} target={"_blank"}>
+                                        <a href={"/Cocktail/ingredient/" + props.ing8} target={"_blank"}>
                                             <h5>{"8. " + props.ing8 + "  "}{props.measure8 ? props.measure8 : null}</h5>
                                         </a>
                                     ) : null}</div>

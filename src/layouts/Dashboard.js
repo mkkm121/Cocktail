@@ -60,7 +60,7 @@ function Dashboard(props) {
                     />
                     <Switch>
                         <Route
-                            path={"/allcocktails"}
+                            path={"/Cocktail/allcocktails"}
                             name={"All Cocktails"}
                             icon={"nc-icon nc-bank"}
                             layout={""}

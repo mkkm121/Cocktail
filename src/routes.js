@@ -13,7 +13,7 @@ import LiveChat from "./views/LiveChat"
 
 var routes = [
     {
-        path: "/allcocktails",
+        path: "/Cocktail/allcocktails",
         name: "All Cocktails",
         icon: "nc-icon nc-bullet-list-67" ,
         component: AllCocktails,
@@ -21,7 +21,7 @@ var routes = [
         sidebar: true
     },
     {
-        path: "/randomcocktail",
+        path: "/Cocktail/randomcocktail",
         name: "Random Cocktail",
         icon: "nc-icon nc-refresh-69",
         component: RandomCocktail,
@@ -29,21 +29,21 @@ var routes = [
         sidebar: true
     },
     {
-        path: "/cocktail/:name",
+        path: "/Cocktail/cocktail/:name",
         name: "Cocktail Details",
         icon: "nc-icon nc-pin-3",
         component: CocktailDetails,
         layout: "",
     },
     {
-        path: "/ingredient/:name",
+        path: "/Cocktail/ingredient/:name",
         name: "Ingredient Details",
         icon: "nc-icon nc-pin-3",
         component: IngredientDetail,
         layout: "",
     },
     {
-        path: "/byIngredient",
+        path: "/Cocktail/byIngredient",
         name: "Search by Ingredients",
         icon: "nc-icon nc-zoom-split",
         component: SearchByIngredient,
@@ -51,7 +51,7 @@ var routes = [
         sidebar: true
     },
     {
-        path: "/map",
+        path: "/Cocktail/map",
         name: "Map",
         icon: "nc-icon nc-map-big",
         component: BarMap,
@@ -59,7 +59,7 @@ var routes = [
         sidebar: true
     },
     {
-        path: "/support",
+        path: "/Cocktail/support",
         name: "Support Us",
         icon: "nc-icon nc-money-coins",
         component: SupportUs,
@@ -67,35 +67,35 @@ var routes = [
         sidebar: true
     },
     {
-        path: "/livechat",
+        path: "/Cocktail/livechat",
         name: "Live Chat",
         icon: "nc-icon nc-pin-3",
         component: LiveChat,
         layout: ""
     },
     {
-        path: "/user",
+        path: "/Cocktail/user",
         name: "User Profile",
         icon: "nc-icon nc-pin-3",
         component: UserPage,
         layout: "",
     },
     {
-        path: "/login",
+        path: "/Cocktail/login",
         name: "Login",
         icon: "nc-icon nc-pin-3",
         component: Login,
         layout: "",
     },
     {
-        path: "/signup",
+        path: "/Cocktail/signup",
         name: "Sign Up",
         icon: "nc-icon nc-pin-3",
         component: SignUp,
         layout: "",
     },
     {
-        path: "/checkout",
+        path: "/Cocktail/checkout",
         name: "Checkout",
         icon: "nc-icon nc-pin-3",
         component: Payment,

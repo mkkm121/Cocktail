@@ -19,8 +19,7 @@ const GetData = (props) => {
     marginTop:"10px"}}>
         {data.map((el, index) => {
             return (
-
-                ((props.searchBarValue == "") && ((el.strAlcoholic.toString() == props.type.toString() && el.strCategory.toString() == props.category.toString()) || (el.strAlcoholic.toString() == props.type.toString() && props.category.toString() == "All"))) ?
+                ((props.searchBarValue == "") && ((el.strAlcoholic.toString() === props.type.toString() && el.strCategory.toString() === props.category.toString()) || (el.strAlcoholic.toString() === props.type.toString() && props.category.toString() === "All"))) ?
                     <a href={"./cocktail/" + el.idDrink}>
                         <div>
                             <Row style={{'margin': '10px'}}>

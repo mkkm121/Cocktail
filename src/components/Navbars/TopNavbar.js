@@ -147,11 +147,11 @@ function TopNavbar(props) {
                 <i className="nc-icon nc-single-02" />
               </DropdownToggle>
               <DropdownMenu right>
-                { AuthService.getCurrentUser() ? <DropdownItem tag="a" href={"/user"}>User Profile</DropdownItem> : <DropdownItem style={{color:"lightgrey", cursor:"not-allowed"}} tag="a" >User Profile</DropdownItem> }
-                { AuthService.getCurrentUser() ? <DropdownItem tag="a" href={"/livechat"}>Live Chat</DropdownItem> : <DropdownItem style={{color:"lightgrey", cursor:"not-allowed"}} tag="a" >Live Chat</DropdownItem> }
-                { !AuthService.getCurrentUser() ? <DropdownItem tag="a" href={"/login"}>Log in</DropdownItem> : null }
-                { !AuthService.getCurrentUser() ? <DropdownItem tag="a" href={"/signup"}>Sign up</DropdownItem> : null }
-                { AuthService.getCurrentUser() ? <DropdownItem tag="a" href={"/allcocktails"} onClick={ () => AuthService.logout()}>Log out</DropdownItem> : null }
+                { AuthService.getCurrentUser() ? <DropdownItem tag="a" href={"/Cocktail/user"}>User Profile</DropdownItem> : <DropdownItem style={{color:"lightgrey", cursor:"not-allowed"}} tag="a" >User Profile</DropdownItem> }
+                { AuthService.getCurrentUser() ? <DropdownItem tag="a" href={"/Cocktail/livechat"}>Live Chat</DropdownItem> : <DropdownItem style={{color:"lightgrey", cursor:"not-allowed"}} tag="a" >Live Chat</DropdownItem> }
+                { !AuthService.getCurrentUser() ? <DropdownItem tag="a" href={"/Cocktail/login"}>Log in</DropdownItem> : null }
+                { !AuthService.getCurrentUser() ? <DropdownItem tag="a" href={"/Cocktail/signup"}>Sign up</DropdownItem> : null }
+                { AuthService.getCurrentUser() ? <DropdownItem tag="a" href={"/Cocktail/allcocktails"} onClick={ () => AuthService.logout()}>Log out</DropdownItem> : null }
               </DropdownMenu>
             </Dropdown>
             <Dropdown
