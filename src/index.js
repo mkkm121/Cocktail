@@ -11,7 +11,7 @@ import MainLayout from "layouts/Dashboard.js";
 ReactDOM.render(
     <BrowserRouter>
         <Switch>
-            <Route path="" render={(props)  => <MainLayout {...props} search="" />}/>
+            <Route path="/Cocktail" render={(props)  => <MainLayout {...props} search="" />}/>
             <Redirect to={{
                 pathname: "/Cocktail/allcocktails"
             }}/>
