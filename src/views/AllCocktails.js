@@ -20,7 +20,7 @@ const GetData = (props) => {
         {data.map((el, index) => {
             return (
                 ((props.searchBarValue == "") && ((el.strAlcoholic.toString() === props.type.toString() && el.strCategory.toString() === props.category.toString()) || (el.strAlcoholic.toString() === props.type.toString() && props.category.toString() === "All"))) ?
-                    <a href={"./cocktail/" + el.idDrink}>
+                    <a href={"cocktail/" + el.idDrink}>
                         <div>
                             <Row style={{'margin': '10px'}}>
                                 <img src={el.strDrinkThumb} height={100} width={100} style={{'borderRadius': '5px'}}/>
@@ -33,7 +33,7 @@ const GetData = (props) => {
                         </div>
                     </a>
                     : (props.searchBarValue !== "") ? ((el.strDrink.toString().toLowerCase().includes(props.searchBarValue.toString().toLowerCase().toLowerCase())) ?
-                        <a href={"./cocktail/" + el.idDrink}>
+                        <a href={"cocktail/" + el.idDrink}>
                             <div>
                                 <Row style={{'margin': '10px'}}>
                                     <img src={el.strDrinkThumb} height={100} width={100} style={{'borderRadius': '5px'}}/>
