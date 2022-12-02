@@ -168,7 +168,7 @@ function User() {
                                         {modal.type=='drinksList' ?
                                         userLikedCoctailList.map((el) => {
                                             return (
-                                                <a href={"./cocktail/" + el.idDrink}>
+                                                <a href={"/Cocktail/cocktail/" + el.idDrink}>
                                                 <div>
                                                 <Row style={{'margin': '10px'}}>
                                                 <img src={el.strDrinkThumb} height={100} width={100} style={{'borderRadius': '5px'}}/>
@@ -193,7 +193,7 @@ function User() {
                                                 <Col>
                                                     <Row> <b>{el.userId}</b></Row>
                                                     <Row>{el.content}</Row>
-                                                    <Row><a href={"/cocktail/"+el.cocktailId}>{el.cocktailName}</a></Row>
+                                                    <Row><a href={"/Cocktail/cocktail/"+el.cocktailId}>{el.cocktailName}</a></Row>
                                                 </Col>
                                             </Row>
                                          : null

@@ -19,7 +19,7 @@ const FilteredCoctails = (props) => {
     flexFlow:"row wrap"}}>
         {props.data.map((el, index) => {
         return (
-            <a href={"./cocktail/" + el.idDrink}>
+            <a href={"/Cocktail/cocktail/" + el.idDrink}>
 
                         <Col style={{width:"18vw", minWidth:"180px", minHeight:"240px", padding:0}}>
                         <img src={el.strDrinkThumb} height={100} width={100} style={{'borderRadius': '5px'}}/>
